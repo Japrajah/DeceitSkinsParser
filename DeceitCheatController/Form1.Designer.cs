@@ -38,40 +38,42 @@ namespace DeceitCheatController
             this.alexMaskBox = new System.Windows.Forms.ComboBox();
             this.alexHeadBox = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.changKnife = new System.Windows.Forms.ComboBox();
             this.changPistol = new System.Windows.Forms.ComboBox();
             this.changWist = new System.Windows.Forms.ComboBox();
             this.changBody = new System.Windows.Forms.ComboBox();
             this.changMask = new System.Windows.Forms.ComboBox();
             this.changHead = new System.Windows.Forms.ComboBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.LisaKnife = new System.Windows.Forms.ComboBox();
             this.lisaPistol = new System.Windows.Forms.ComboBox();
             this.lisaWist = new System.Windows.Forms.ComboBox();
             this.lisaBody = new System.Windows.Forms.ComboBox();
             this.lisaMask = new System.Windows.Forms.ComboBox();
             this.lisaHead = new System.Windows.Forms.ComboBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.RachelKnife = new System.Windows.Forms.ComboBox();
+            this.RachelMask = new System.Windows.Forms.ComboBox();
             this.RachelPistol = new System.Windows.Forms.ComboBox();
+            this.RachelHead = new System.Windows.Forms.ComboBox();
             this.RachelWist = new System.Windows.Forms.ComboBox();
             this.RachelBody = new System.Windows.Forms.ComboBox();
-            this.RachelMask = new System.Windows.Forms.ComboBox();
-            this.RachelHead = new System.Windows.Forms.ComboBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.HansKnife = new System.Windows.Forms.ComboBox();
             this.HansPistol = new System.Windows.Forms.ComboBox();
             this.HansWist = new System.Windows.Forms.ComboBox();
             this.HansBody = new System.Windows.Forms.ComboBox();
             this.HansMask = new System.Windows.Forms.ComboBox();
             this.HansHead = new System.Windows.Forms.ComboBox();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.NinaKnife = new System.Windows.Forms.ComboBox();
             this.NinaPistol = new System.Windows.Forms.ComboBox();
             this.NinaWist = new System.Windows.Forms.ComboBox();
             this.NinaBody = new System.Windows.Forms.ComboBox();
             this.NinaMask = new System.Windows.Forms.ComboBox();
             this.NinaHead = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -175,70 +177,6 @@ namespace DeceitCheatController
             this.tabPage2.Text = "Chang";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.LisaKnife);
-            this.tabPage3.Controls.Add(this.lisaPistol);
-            this.tabPage3.Controls.Add(this.lisaWist);
-            this.tabPage3.Controls.Add(this.lisaBody);
-            this.tabPage3.Controls.Add(this.lisaMask);
-            this.tabPage3.Controls.Add(this.lisaHead);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(703, 400);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Lisa";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.RachelKnife);
-            this.tabPage4.Controls.Add(this.RachelMask);
-            this.tabPage4.Controls.Add(this.RachelPistol);
-            this.tabPage4.Controls.Add(this.RachelHead);
-            this.tabPage4.Controls.Add(this.RachelWist);
-            this.tabPage4.Controls.Add(this.RachelBody);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(703, 400);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Rachel";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.HansKnife);
-            this.tabPage5.Controls.Add(this.HansPistol);
-            this.tabPage5.Controls.Add(this.HansWist);
-            this.tabPage5.Controls.Add(this.HansBody);
-            this.tabPage5.Controls.Add(this.HansMask);
-            this.tabPage5.Controls.Add(this.HansHead);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(703, 400);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Hans";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.NinaKnife);
-            this.tabPage6.Controls.Add(this.NinaPistol);
-            this.tabPage6.Controls.Add(this.NinaWist);
-            this.tabPage6.Controls.Add(this.NinaBody);
-            this.tabPage6.Controls.Add(this.NinaMask);
-            this.tabPage6.Controls.Add(this.NinaHead);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(703, 400);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Nina";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
             // changKnife
             // 
             this.changKnife.FormattingEnabled = true;
@@ -286,6 +224,22 @@ namespace DeceitCheatController
             this.changHead.Name = "changHead";
             this.changHead.Size = new System.Drawing.Size(110, 21);
             this.changHead.TabIndex = 7;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.LisaKnife);
+            this.tabPage3.Controls.Add(this.lisaPistol);
+            this.tabPage3.Controls.Add(this.lisaWist);
+            this.tabPage3.Controls.Add(this.lisaBody);
+            this.tabPage3.Controls.Add(this.lisaMask);
+            this.tabPage3.Controls.Add(this.lisaHead);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(703, 400);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Lisa";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // LisaKnife
             // 
@@ -335,6 +289,22 @@ namespace DeceitCheatController
             this.lisaHead.Size = new System.Drawing.Size(110, 21);
             this.lisaHead.TabIndex = 7;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.RachelKnife);
+            this.tabPage4.Controls.Add(this.RachelMask);
+            this.tabPage4.Controls.Add(this.RachelPistol);
+            this.tabPage4.Controls.Add(this.RachelHead);
+            this.tabPage4.Controls.Add(this.RachelWist);
+            this.tabPage4.Controls.Add(this.RachelBody);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(703, 400);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Rachel";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
             // RachelKnife
             // 
             this.RachelKnife.FormattingEnabled = true;
@@ -343,6 +313,14 @@ namespace DeceitCheatController
             this.RachelKnife.Size = new System.Drawing.Size(110, 21);
             this.RachelKnife.TabIndex = 9;
             // 
+            // RachelMask
+            // 
+            this.RachelMask.FormattingEnabled = true;
+            this.RachelMask.Location = new System.Drawing.Point(122, 6);
+            this.RachelMask.Name = "RachelMask";
+            this.RachelMask.Size = new System.Drawing.Size(110, 21);
+            this.RachelMask.TabIndex = 8;
+            // 
             // RachelPistol
             // 
             this.RachelPistol.FormattingEnabled = true;
@@ -350,6 +328,14 @@ namespace DeceitCheatController
             this.RachelPistol.Name = "RachelPistol";
             this.RachelPistol.Size = new System.Drawing.Size(110, 21);
             this.RachelPistol.TabIndex = 10;
+            // 
+            // RachelHead
+            // 
+            this.RachelHead.FormattingEnabled = true;
+            this.RachelHead.Location = new System.Drawing.Point(6, 6);
+            this.RachelHead.Name = "RachelHead";
+            this.RachelHead.Size = new System.Drawing.Size(110, 21);
+            this.RachelHead.TabIndex = 7;
             // 
             // RachelWist
             // 
@@ -367,21 +353,21 @@ namespace DeceitCheatController
             this.RachelBody.Size = new System.Drawing.Size(110, 21);
             this.RachelBody.TabIndex = 12;
             // 
-            // RachelMask
+            // tabPage5
             // 
-            this.RachelMask.FormattingEnabled = true;
-            this.RachelMask.Location = new System.Drawing.Point(122, 6);
-            this.RachelMask.Name = "RachelMask";
-            this.RachelMask.Size = new System.Drawing.Size(110, 21);
-            this.RachelMask.TabIndex = 8;
-            // 
-            // RachelHead
-            // 
-            this.RachelHead.FormattingEnabled = true;
-            this.RachelHead.Location = new System.Drawing.Point(6, 6);
-            this.RachelHead.Name = "RachelHead";
-            this.RachelHead.Size = new System.Drawing.Size(110, 21);
-            this.RachelHead.TabIndex = 7;
+            this.tabPage5.Controls.Add(this.HansKnife);
+            this.tabPage5.Controls.Add(this.HansPistol);
+            this.tabPage5.Controls.Add(this.HansWist);
+            this.tabPage5.Controls.Add(this.HansBody);
+            this.tabPage5.Controls.Add(this.HansMask);
+            this.tabPage5.Controls.Add(this.HansHead);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(703, 400);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Hans";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // HansKnife
             // 
@@ -431,6 +417,22 @@ namespace DeceitCheatController
             this.HansHead.Size = new System.Drawing.Size(110, 21);
             this.HansHead.TabIndex = 7;
             // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.NinaKnife);
+            this.tabPage6.Controls.Add(this.NinaPistol);
+            this.tabPage6.Controls.Add(this.NinaWist);
+            this.tabPage6.Controls.Add(this.NinaBody);
+            this.tabPage6.Controls.Add(this.NinaMask);
+            this.tabPage6.Controls.Add(this.NinaHead);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(703, 400);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Nina";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
             // NinaKnife
             // 
             this.NinaKnife.FormattingEnabled = true;
@@ -479,11 +481,32 @@ namespace DeceitCheatController
             this.NinaHead.Size = new System.Drawing.Size(110, 21);
             this.NinaHead.TabIndex = 7;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(22, 446);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(135, 451);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 449);
+            this.ClientSize = new System.Drawing.Size(736, 481);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -495,6 +518,7 @@ namespace DeceitCheatController
             this.tabPage5.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -543,6 +567,8 @@ namespace DeceitCheatController
         private System.Windows.Forms.ComboBox NinaBody;
         private System.Windows.Forms.ComboBox NinaMask;
         private System.Windows.Forms.ComboBox NinaHead;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

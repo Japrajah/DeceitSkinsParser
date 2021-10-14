@@ -18,8 +18,7 @@ namespace DeceitCheatController
         {
             InitializeComponent();
             FillCommandBoxs();
-
-
+         
         }
 
         public void FillCommandBoxs()
@@ -109,14 +108,10 @@ namespace DeceitCheatController
             Debug.WriteLine(SkinList.skInfo.Count);
         }
 
-
-
-
-
-
-
-
-
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string[] lodout = { alexHeadBox.Text, alexMaskBox.Text, alexBodyBox.Text, alexWristband.Text, alexPistol.Text, alexKnife.Text };
+           label1.Text = Skinparser.ConvertToloadoutAlex(lodout);
+        }
     }
 }

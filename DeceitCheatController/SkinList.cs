@@ -32,60 +32,61 @@ class SkinInfo
 
         static private string TryDefineSKIN(int Skin_id)
         {
-            if (Skin_id >= 4097 && Skin_id <= 4162)
+            int newskins = 100;
+            if (Skin_id >= 4097 && Skin_id <= 4162 + newskins)
                 return "PISTOL";
-            if (Skin_id >= 5121 && Skin_id <= 5178)
+            if (Skin_id >= 5121 && Skin_id <= 5178 + newskins)
                 return "KNIFE";
-            if (Skin_id >= 3073 && Skin_id <= 3124)  // ЧАСЫ
+            if (Skin_id >= 3073 && Skin_id <= 3124 + newskins)  // ЧАСЫ
                 return "WRISTBAND";
-            if (Skin_id >= 8193 && Skin_id <= 8260)
+            if (Skin_id >= 8193 && Skin_id <= 8260 + newskins)
                 return "GRAFFITI";
             ///////////////ALEX
-            if (Skin_id >= 5 && Skin_id <= 109)  //ALEX HEAD
+            if (Skin_id >= 5 && Skin_id <= 109 + newskins)  //ALEX HEAD
                 return "ALEX_HEAD";
-            if (Skin_id >= 1025 && Skin_id <= 1051)  //ALEX MASK // 1051
+            if (Skin_id >= 1025 && Skin_id <= 1051 + newskins)  //ALEX MASK // 1051
                 return "ALEX_MASK";
-            if (Skin_id >= 2049 && Skin_id <= 2182)  //ALEX BODY   2049 18433 34817 51201 67585 83969
+            if (Skin_id >= 2049 && Skin_id <= 2182 + newskins)  //ALEX BODY   2049 18433 34817 51201 67585 83969
                 return "ALEX_BODY";
 
             /////////////// CHANG
-            if (Skin_id >= 16387 && Skin_id <= 16498)  //CHANG HEAD
+            if (Skin_id >= 16387 && Skin_id <= 16498 + newskins)  //CHANG HEAD
                 return "CHANG_HEAD";
-            if (Skin_id >= 17411 && Skin_id <= 17432)  //CHANG MASK
+            if (Skin_id >= 17411 && Skin_id <= 17432 + newskins)  //CHANG MASK
                 return "CHANG_MASK";
-            if (Skin_id >= 18433 && Skin_id <= 18572)  //CHANG BODY
+            if (Skin_id >= 18433 && Skin_id <= 18572 + newskins)  //CHANG BODY
                 return "CHANG_BODY";
 
             /////////////// LISA 
-            if (Skin_id >= 32769 && Skin_id <= 32878)  //LISA HEAD
+            if (Skin_id >= 32769 && Skin_id <= 32878 + newskins)  //LISA HEAD
                 return "LISA_HEAD";
-            if (Skin_id >= 33794 && Skin_id <= 33817)  //LISA MASK
+            if (Skin_id >= 33794 && Skin_id <= 33817 + newskins)  //LISA MASK
                 return "LISA_MASK";
-            if (Skin_id >= 34817 && Skin_id <= 34952)  //LISA BODY
+            if (Skin_id >= 34817 && Skin_id <= 34952 + newskins)  //LISA BODY
                 return "LISA_BODY";
 
             //////////// Rachel
-            if (Skin_id >= 49159 && Skin_id <= 49263)  //RACHEL HEAD
+            if (Skin_id >= 49159 && Skin_id <= 49263 + newskins)  //RACHEL HEAD
                 return "RACHEL_HEAD";
-            if (Skin_id >= 50179 && Skin_id <= 50198)  //RACHEL MASK
+            if (Skin_id >= 50179 && Skin_id <= 50198 + newskins)  //RACHEL MASK
                 return "RACHEL_MASK";
-            if (Skin_id >= 51201 && Skin_id <= 51337)  //RACHEL BODY
+            if (Skin_id >= 51201 && Skin_id <= 51337 + newskins)  //RACHEL BODY
                 return "RACHEL_BODY";
 
             //////////// Hans
-            if (Skin_id >= 65547 && Skin_id <= 65649)  //Hans HEAD
+            if (Skin_id >= 65547 && Skin_id <= 65649 + newskins)  //Hans HEAD
                 return "HANS_HEAD";
-            if (Skin_id >= 66563 && Skin_id <= 66586)  //Hans MASK
+            if (Skin_id >= 66563 && Skin_id <= 66586 + newskins)  //Hans MASK
                 return "HANS_MASK";
-            if (Skin_id >= 67585 && Skin_id <= 67723)  //Hans BODY
+            if (Skin_id >= 67585 && Skin_id <= 67723 + newskins)  //Hans BODY
                 return "HANS_BODY";
 
             //////////// Nina
-            if (Skin_id >= 81924 && Skin_id <= 82032)  //Nina HEAD
+            if (Skin_id >= 81924 && Skin_id <= 82032 + newskins)  //Nina HEAD
                 return "NINA_HEAD";
-            if (Skin_id >= 82947 && Skin_id <= 82967)  //LISA MASK
+            if (Skin_id >= 82947 && Skin_id <= 82967 + newskins)  //LISA MASK
                 return "NINA_MASK";
-            if (Skin_id >= 83969 && Skin_id <= 84106)  //LISA BODY
+            if (Skin_id >= 83969 && Skin_id <= 84106 + newskins)  //LISA BODY
                 return "NINA_BODY";
 
 
@@ -109,6 +110,7 @@ class SkinInfo
                         {
                             if ("Global ID" == fields[0])
                                 continue;
+
                             parsInfo.Global_Id = Convert.ToInt32(fields[0]);
                             parsInfo.SkinType = Skinparser.TryDefineSKIN(parsInfo.Global_Id);
                             parsInfo.SkinName = fields[1];
@@ -121,7 +123,6 @@ class SkinInfo
                         }
                         if (parsInfo.Global_Id != 0)
                             SkinList.skInfo.Add(parsInfo);
-
 
 
                     }
@@ -137,7 +138,61 @@ class SkinInfo
 
         }
 
-       
+        static public string ConvertToloadoutAlex(string[] Skin)
+        {
+            string loadout ="";
+            for (int i = 0; i < 3; i++)
+            {
+                for (int z = 0; z < SkinList.skInfo.Count; z++)
+                {
+                    if (SkinList.skInfo[z].SkinType == "ALEX_HEAD" || SkinList.skInfo[z].SkinType == "ALEX_BODY" || SkinList.skInfo[z].SkinType == "ALEX_MASK" )
+                    {
+                        if (SkinList.skInfo[z].SkinName == Skin[i])
+                        {
+                            loadout += SkinList.skInfo[z].Global_Id+",";
+                            break;
+                        }
+                    }
+                }
+            }
+
+            for (int z = 0; z < SkinList.skInfo.Count; z++)
+            {
+                if (SkinList.skInfo[z].SkinType == "WRISTBAND")
+                {
+                    if (SkinList.skInfo[z].SkinName == Skin[3])
+                    {
+                        loadout += SkinList.skInfo[z].Global_Id + ",";
+                        break;
+                    }
+                }
+            }
+            for (int z = 0; z < SkinList.skInfo.Count; z++)
+            {
+                if (SkinList.skInfo[z].SkinType == "PISTOL")
+                {
+                    if (SkinList.skInfo[z].SkinName == Skin[4])
+                    {
+                        loadout += SkinList.skInfo[z].Global_Id + ",";
+                        break;
+                    }
+                }
+            }
+            for (int z = 0; z < SkinList.skInfo.Count; z++)
+            {
+                if (SkinList.skInfo[z].SkinType == "KNIFE")
+                {
+                    if (SkinList.skInfo[z].SkinName == Skin[5])
+                    {
+                        loadout += SkinList.skInfo[z].Global_Id + ",";
+                        break;
+                    }
+                }
+            }
+
+                       
+            return loadout+ "6178,7215,8225";
+        }
 
     }
 
