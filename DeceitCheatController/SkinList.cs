@@ -138,9 +138,11 @@ class SkinInfo
 
         }
 
-        static public string ConvertToloadoutAlex(string[] Skin)
+        static public string ConvertToloadoutAlex(string[] Skin,string charachter)
         {
-            string loadout ="";
+            string loadout = "";
+            if (charachter == "ALEX")
+            {
             for (int i = 0; i < 3; i++)
             {
                 for (int z = 0; z < SkinList.skInfo.Count; z++)
@@ -155,7 +157,6 @@ class SkinInfo
                     }
                 }
             }
-
             for (int z = 0; z < SkinList.skInfo.Count; z++)
             {
                 if (SkinList.skInfo[z].SkinType == "WRISTBAND")
@@ -190,7 +191,7 @@ class SkinInfo
                 }
             }
 
-                       
+            }
             return loadout+ "6178,7215,8225";
         }
 

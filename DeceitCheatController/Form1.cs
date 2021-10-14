@@ -111,7 +111,7 @@ namespace DeceitCheatController
         private void button1_Click(object sender, EventArgs e)
         {
             string[] lodout = { alexHeadBox.Text, alexMaskBox.Text, alexBodyBox.Text, alexWristband.Text, alexPistol.Text, alexKnife.Text };
-           label1.Text = Skinparser.ConvertToloadoutAlex(lodout);
+           label1.Text = Skinparser.ConvertToloadoutAlex(lodout, "ALEX");
         }
     }
 }
