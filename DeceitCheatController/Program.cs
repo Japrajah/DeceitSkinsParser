@@ -10,6 +10,15 @@ using System.IO;
 
 namespace DeceitCheatController
 {
+    public class ThreadWork
+    {
+        public static void DoWork()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
+        }
+    }
     static class Program
     {
         /// <summary>
@@ -17,26 +26,25 @@ namespace DeceitCheatController
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-
-     
         static async Task Main()
         {
             SkinList.skInfo = new List<SkinInfo>();
             Skinparser.GetListFromCvs();
-            Task FormTask = Task.Run(() =>
-            {
+            Thread thread1 = new Thread(ThreadWork.DoWork);
+            thread1.SetApartmentState(ApartmentState.STA);
+            thread1.Start();
 
-                Application.EnableVisualStyles();
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new Form1());
-            });
+           
+
+
+
   while (true)
             {
 
-                Thread.Sleep(5000);
-                Debug.WriteLine("Main Thread end");
+                Thread.Sleep(1000);
+      
                     Form fc = Application.OpenForms["Form1"];
-                Debug.WriteLine(SkinList.skInfo.Count);
+      
                 if (fc == null)
                     break;
 

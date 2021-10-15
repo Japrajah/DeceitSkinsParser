@@ -12,6 +12,7 @@ namespace DeceitCheatController
 
 
     }
+
     public class ComboBoxCustom : ComboBox
     {
         public ComboBoxCustom()
@@ -104,53 +105,53 @@ namespace DeceitCheatController
         /// </summary>
 
         private void InitializeComponent()
-        {  dynamic drawmode = new System.Windows.Forms.ComboBox();
+        {  
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.alexKnife = new ComboBoxCustom();
-            this.alexPistol = new System.Windows.Forms.ComboBox();
-            this.alexWristband = new System.Windows.Forms.ComboBox();
+            this.alexPistol = new ComboBoxCustom();
+            this.alexWristband = new ComboBoxCustom();
             this.alexBodyBox = new ComboBoxCustom();
             this.alexMaskBox = new ComboBoxCustom();
             this.alexHeadBox = new ComboBoxCustom();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.changKnife = new ComboBoxCustom();
-            this.changPistol = new System.Windows.Forms.ComboBox();
-            this.changWist = new System.Windows.Forms.ComboBox();
-            this.changBody = new System.Windows.Forms.ComboBox();
-            this.changMask = new System.Windows.Forms.ComboBox();
-            this.changHead = new System.Windows.Forms.ComboBox();
+            this.changPistol = new ComboBoxCustom();
+            this.changWist = new ComboBoxCustom();
+            this.changBody = new ComboBoxCustom();
+            this.changMask = new ComboBoxCustom();
+            this.changHead = new ComboBoxCustom();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.LisaKnife = new ComboBoxCustom();
-            this.lisaPistol = new System.Windows.Forms.ComboBox();
-            this.lisaWist = new System.Windows.Forms.ComboBox();
-            this.lisaBody = new System.Windows.Forms.ComboBox();
-            this.lisaMask = new System.Windows.Forms.ComboBox();
-            this.lisaHead = new System.Windows.Forms.ComboBox();
+            this.lisaPistol = new ComboBoxCustom();
+            this.lisaWist = new ComboBoxCustom();
+            this.lisaBody = new ComboBoxCustom();
+            this.lisaMask = new ComboBoxCustom();
+            this.lisaHead = new ComboBoxCustom();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.RachelKnife = new ComboBoxCustom();
-            this.RachelMask = new System.Windows.Forms.ComboBox();
-            this.RachelPistol = new System.Windows.Forms.ComboBox();
-            this.RachelHead = new System.Windows.Forms.ComboBox();
-            this.RachelWist = new System.Windows.Forms.ComboBox();
-            this.RachelBody = new System.Windows.Forms.ComboBox();
+            this.RachelMask = new ComboBoxCustom();
+            this.RachelPistol = new ComboBoxCustom();
+            this.RachelHead = new ComboBoxCustom();
+            this.RachelWist = new ComboBoxCustom();
+            this.RachelBody = new ComboBoxCustom();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.HansKnife = new ComboBoxCustom();
-            this.HansPistol = new System.Windows.Forms.ComboBox();
-            this.HansWist = new System.Windows.Forms.ComboBox();
-            this.HansBody = new System.Windows.Forms.ComboBox();
-            this.HansMask = new System.Windows.Forms.ComboBox();
-            this.HansHead = new System.Windows.Forms.ComboBox();
+            this.HansPistol = new ComboBoxCustom();
+            this.HansWist = new ComboBoxCustom();
+            this.HansBody = new ComboBoxCustom();
+            this.HansMask = new ComboBoxCustom();
+            this.HansHead = new ComboBoxCustom(); ;
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.NinaKnife = new ComboBoxCustom();
-            this.NinaPistol = new System.Windows.Forms.ComboBox();
-            this.NinaWist = new System.Windows.Forms.ComboBox();
-            this.NinaBody = new System.Windows.Forms.ComboBox();
-            this.NinaMask = new System.Windows.Forms.ComboBox();
-            this.NinaHead = new System.Windows.Forms.ComboBox();
+            this.NinaPistol = new ComboBoxCustom();
+            this.NinaWist = new ComboBoxCustom();
+            this.NinaBody = new ComboBoxCustom();
+            this.NinaMask = new ComboBoxCustom();
+            this.NinaHead = new ComboBoxCustom();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.checkboxShorted = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
@@ -181,12 +182,12 @@ namespace DeceitCheatController
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Navy;
-            this.tabPage1.Controls.Add(this.alexKnife); 
-            this.tabPage1.Controls.Add(this.alexPistol);
-            this.tabPage1.Controls.Add(this.alexWristband);
-            this.tabPage1.Controls.Add(this.alexBodyBox);
-            this.tabPage1.Controls.Add(this.alexMaskBox);
-            this.tabPage1.Controls.Add(this.alexHeadBox);
+            this.tabPage1.Controls.Add(alexKnife); 
+            this.tabPage1.Controls.Add(alexPistol);
+            this.tabPage1.Controls.Add(alexWristband);
+            this.tabPage1.Controls.Add(alexBodyBox);
+            this.tabPage1.Controls.Add(alexMaskBox);
+            this.tabPage1.Controls.Add(alexHeadBox);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage1.Name = "tabPage1";
@@ -867,14 +868,27 @@ namespace DeceitCheatController
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label1.ForeColor = System.Drawing.Color.Gold;
+            this.label1.FormattingEnabled = true;
             this.label1.Location = new System.Drawing.Point(158, 451);
+
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 13);
+            this.label1.Size = new System.Drawing.Size(187, 21);
+            this.label1.Sorted = true;
+            this.label1.TabIndex = 9;
+            this.label1.Tag = "";
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.MaxLength = 0;
+            this.label1.Visible = false;
+
             this.label1.TabIndex = 2;
-            this.label1.Text = "Output Here";
+            this.label1.Text = "Output Here!";
             // 
             // label2
             // 
@@ -883,6 +897,7 @@ namespace DeceitCheatController
             this.label2.Location = new System.Drawing.Point(846, 34);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
+            this.label2.Text = "Made By Japrajah!";
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 3;
             // 
@@ -918,7 +933,7 @@ namespace DeceitCheatController
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "chrome";
+            this.Text = "skinchanger.cfg editor by Japrajah";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
@@ -935,49 +950,49 @@ namespace DeceitCheatController
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.ComboBox alexHeadBox;
+        private ComboBoxCustom alexHeadBox;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
         private ComboBoxCustom alexKnife;
-        private System.Windows.Forms.ComboBox alexPistol;
-        private System.Windows.Forms.ComboBox alexWristband;
-        private System.Windows.Forms.ComboBox alexBodyBox;
-        private System.Windows.Forms.ComboBox alexMaskBox;
-        private System.Windows.Forms.ComboBox changKnife;
-        private System.Windows.Forms.ComboBox changPistol;
-        private System.Windows.Forms.ComboBox changWist;
-        private System.Windows.Forms.ComboBox changBody;
-        private System.Windows.Forms.ComboBox changMask;
-        private System.Windows.Forms.ComboBox changHead;
-        private System.Windows.Forms.ComboBox LisaKnife;
-        private System.Windows.Forms.ComboBox lisaPistol;
-        private System.Windows.Forms.ComboBox lisaWist;
-        private System.Windows.Forms.ComboBox lisaBody;
-        private System.Windows.Forms.ComboBox lisaMask;
-        private System.Windows.Forms.ComboBox lisaHead;
-        private System.Windows.Forms.ComboBox RachelKnife;
-        private System.Windows.Forms.ComboBox RachelMask;
-        private System.Windows.Forms.ComboBox RachelPistol;
-        private System.Windows.Forms.ComboBox RachelHead;
-        private System.Windows.Forms.ComboBox RachelWist;
-        private System.Windows.Forms.ComboBox RachelBody;
-        private System.Windows.Forms.ComboBox HansKnife;
-        private System.Windows.Forms.ComboBox HansPistol;
-        private System.Windows.Forms.ComboBox HansWist;
-        private System.Windows.Forms.ComboBox HansBody;
-        private System.Windows.Forms.ComboBox HansMask;
-        private System.Windows.Forms.ComboBox HansHead;
-        private System.Windows.Forms.ComboBox NinaKnife;
-        private System.Windows.Forms.ComboBox NinaPistol;
-        private System.Windows.Forms.ComboBox NinaWist;
-        private System.Windows.Forms.ComboBox NinaBody;
-        private System.Windows.Forms.ComboBox NinaMask;
-        private System.Windows.Forms.ComboBox NinaHead;
+        private ComboBoxCustom alexPistol;
+        private ComboBoxCustom alexWristband;
+        private ComboBoxCustom alexBodyBox;
+        private ComboBoxCustom alexMaskBox;
+        private ComboBoxCustom changKnife;
+        private ComboBoxCustom changPistol;
+        private ComboBoxCustom changWist;
+        private ComboBoxCustom changBody;
+        private ComboBoxCustom changMask;
+        private ComboBoxCustom changHead;
+        private ComboBoxCustom LisaKnife;
+        private ComboBoxCustom lisaPistol;
+        private ComboBoxCustom lisaWist;
+        private ComboBoxCustom lisaBody;
+        private ComboBoxCustom lisaMask;
+        private ComboBoxCustom lisaHead;
+        private ComboBoxCustom RachelKnife;
+        private ComboBoxCustom RachelMask;
+        private ComboBoxCustom RachelPistol;
+        private ComboBoxCustom RachelHead;
+        private ComboBoxCustom RachelWist;
+        private ComboBoxCustom RachelBody;
+        private ComboBoxCustom HansKnife;
+        private ComboBoxCustom HansPistol;
+        private ComboBoxCustom HansWist;
+        private ComboBoxCustom HansBody;
+        private ComboBoxCustom HansMask;
+        private ComboBoxCustom HansHead;
+        private ComboBoxCustom NinaKnife;
+        private ComboBoxCustom NinaPistol;
+        private ComboBoxCustom NinaWist;
+        private ComboBoxCustom NinaBody;
+        private ComboBoxCustom NinaMask;
+        private ComboBoxCustom NinaHead;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox checkboxShorted;
     }
