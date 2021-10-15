@@ -23,13 +23,25 @@ namespace DeceitCheatController
         {
             SkinList.skInfo = new List<SkinInfo>();
             Skinparser.GetListFromCvs();
+            Task FormTask = Task.Run(() =>
+            {
+
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new Form1());
+            });
+  while (true)
+            {
+
+                Thread.Sleep(5000);
+                Debug.WriteLine("Main Thread end");
+                    Form fc = Application.OpenForms["Form1"];
+                Debug.WriteLine(SkinList.skInfo.Count);
+                if (fc == null)
+                    break;
+
+            }
           
-
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-            
-
         }
         
   ///

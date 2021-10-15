@@ -23,14 +23,79 @@ namespace DeceitCheatController
 
         public void FillCommandBoxs()
         {
+            string[] rare = { "Common", "Uncommon", "Rare", "Legendary", };
             for (int i = 0; i < SkinList.skInfo.Count; i++)
             {
                 if (SkinList.skInfo[i].SkinType == "ALEX_HEAD")
-                   alexHeadBox.Items.Add(SkinList.skInfo[i].SkinName);
+                {
+                    if (SkinList.skInfo[i].Rarity == rare[3])
+                    {
+              
+                        alexHeadBox.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Orange));
+
+                    }
+                    if (SkinList.skInfo[i].Rarity == rare[2])
+                    {
+                        alexHeadBox.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Magenta));
+          
+                    }
+                    if (SkinList.skInfo[i].Rarity == rare[1])
+                    {
+
+                        alexHeadBox.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Cyan));
+   
+                    }
+                    if (SkinList.skInfo[i].Rarity != rare[3] && SkinList.skInfo[i].Rarity != rare[2] && SkinList.skInfo[i].Rarity != rare[1])
+                        alexHeadBox.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.White));
+
+
+
+
+
+                }
+                   
                 if (SkinList.skInfo[i].SkinType == "ALEX_MASK")
-                    alexMaskBox.Items.Add(SkinList.skInfo[i].SkinName);
+                {
+                    if (SkinList.skInfo[i].Rarity == rare[3])
+                    {
+
+                        alexMaskBox.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Orange));
+
+                    }
+                    if (SkinList.skInfo[i].Rarity == rare[2])
+                    {
+                        alexMaskBox.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Magenta));
+
+                    }
+                    if (SkinList.skInfo[i].Rarity == rare[1])
+                    {
+
+                        alexMaskBox.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Cyan));
+
+                    }
+                    if (SkinList.skInfo[i].Rarity != rare[3] && SkinList.skInfo[i].Rarity != rare[2] && SkinList.skInfo[i].Rarity != rare[1])
+                        alexMaskBox.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.White));
+
+
+
+
+
+
+
+                }
+             
                 if (SkinList.skInfo[i].SkinType == "ALEX_BODY")
-                    alexBodyBox.Items.Add(SkinList.skInfo[i].SkinName);
+                { 
+                if (SkinList.skInfo[i].Rarity == rare[3])
+                    alexBodyBox.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Orange));
+                if (SkinList.skInfo[i].Rarity == rare[2])
+                    alexBodyBox.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Magenta));
+                if (SkinList.skInfo[i].Rarity == rare[1])
+                    alexBodyBox.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Cyan));
+                    if (SkinList.skInfo[i].Rarity != rare[3] && SkinList.skInfo[i].Rarity != rare[2]&& SkinList.skInfo[i].Rarity != rare[1])
+                        alexBodyBox.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.White));
+                }
+
                 ////
                 if (SkinList.skInfo[i].SkinType == "CHANG_HEAD")
                     changHead.Items.Add(SkinList.skInfo[i].SkinName);
@@ -65,7 +130,14 @@ namespace DeceitCheatController
                 if (SkinList.skInfo[i].SkinType == "NINA_MASK")
                     NinaMask.Items.Add(SkinList.skInfo[i].SkinName);
                 if (SkinList.skInfo[i].SkinType == "NINA_BODY")
+                {
+                  
+
                     NinaBody.Items.Add(SkinList.skInfo[i].SkinName);
+               
+                  
+                }
+                   
 ///////////////////////////////////////////////////////////////////////////
                 if (SkinList.skInfo[i].SkinType == "PISTOL")
                 {
@@ -87,17 +159,56 @@ namespace DeceitCheatController
                 }
 /////////////////////////
             if   (SkinList.skInfo[i].SkinType == "KNIFE")
-                { 
-                    alexKnife.Items.Add(SkinList.skInfo[i].SkinName);
-                    changKnife.Items.Add(SkinList.skInfo[i].SkinName);
-                    LisaKnife.Items.Add(SkinList.skInfo[i].SkinName);
-                    RachelKnife.Items.Add(SkinList.skInfo[i].SkinName);
-                    HansKnife.Items.Add(SkinList.skInfo[i].SkinName);
-                    NinaKnife.Items.Add(SkinList.skInfo[i].SkinName);
+                {
+
+                    if (SkinList.skInfo[i].Rarity == rare[3])
+                    {
+                   
+                        alexKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Orange));
+                        changKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Orange));
+                        LisaKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Orange));
+                        RachelKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Orange));
+                        HansKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Orange));
+                        NinaKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Orange));
+                    }
+                    if (SkinList.skInfo[i].Rarity == rare[2])
+                    {
+                        alexKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Magenta));
+                        changKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Magenta));
+                        LisaKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Magenta));
+                        RachelKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Magenta));
+                        HansKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Magenta));
+                        NinaKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Magenta));
+                    }
+                    if (SkinList.skInfo[i].Rarity == rare[1])
+                    {
+                        
+                        alexKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Cyan));
+                        changKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Cyan));
+                        LisaKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Cyan));
+                        RachelKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName,"0", Color.Cyan));
+                        HansKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Cyan));
+                        NinaKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.Cyan));
+                    }
+                    if (SkinList.skInfo[i].Rarity != rare[3] && SkinList.skInfo[i].Rarity != rare[2] && SkinList.skInfo[i].Rarity != rare[1])
+                    { 
+                        alexKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.White));
+                        changKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.White));
+                        LisaKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.White));
+                        RachelKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.White));
+                        HansKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.White));
+                        NinaKnife.Items.Add(new ComboBoxItem(SkinList.skInfo[i].SkinName, "0", Color.White));
+                    }
+
+
                 }
 
-            }
+               
 
+
+
+   }
+           
 
 
 
@@ -110,8 +221,136 @@ namespace DeceitCheatController
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string[] lodout = { alexHeadBox.Text, alexMaskBox.Text, alexBodyBox.Text, alexWristband.Text, alexPistol.Text, alexKnife.Text };
-           label1.Text = Skinparser.ConvertToloadoutAlex(lodout, "ALEX");
+            string[] lodoutalex = { alexHeadBox.Text, alexMaskBox.Text, alexBodyBox.Text, alexWristband.Text, alexPistol.Text, alexKnife.Text };
+            string[] lodoutchang = { changHead.Text, changMask.Text, changBody.Text, changWist.Text, changPistol.Text, changKnife.Text };
+            string[] lodoutlisa = { lisaHead.Text, lisaMask.Text, lisaBody.Text, lisaWist.Text, lisaPistol.Text, LisaKnife.Text };
+            string[] lodoutRACHEL = {RachelHead.Text, RachelMask.Text, RachelBody.Text, RachelWist.Text, RachelPistol.Text, RachelKnife.Text };
+            string[] lodouthans = { HansHead.Text, HansMask.Text, HansBody.Text, HansWist.Text, HansPistol.Text, HansKnife.Text };
+            string[] lodoutnina = {  NinaHead.Text, NinaMask.Text, NinaBody.Text, NinaWist.Text, NinaPistol.Text, NinaKnife.Text };
+
+            string alex = Skinparser.ConvertToloadoutByName(lodoutalex, "ALEX");
+            string chang = Skinparser.ConvertToloadoutByName(lodoutchang, "CHANG");
+            string lisa = Skinparser.ConvertToloadoutByName(lodoutlisa, "LISA");
+            string rachel= Skinparser.ConvertToloadoutByName(lodoutRACHEL, "RACHEL");
+            string hans = Skinparser.ConvertToloadoutByName(lodouthans, "HANS");
+            string nina = Skinparser.ConvertToloadoutByName(lodoutnina, "NINA");
+
+            
+
+            if (alex != "INVALID" && chang != "INVALID" && lisa != "INVALID" && rachel != "INVALID" && rachel != "INVALID" && hans != "INVALID" && nina != "INVALID")
+            {
+
+                label1s.Text = alex;
+                label1s.Text += chang;
+                label1s.Text += lisa;
+                label1s.Text += rachel;
+                label1s.Text += hans;
+                label1s.Text += nina;
+                label2.Text = "ALL OK!";
+            }
+            else
+            {
+                label2.Text = "ALEX "+ alex + "\nCHANG " + chang + "\nLISA " + lisa + "\nRACHEL " + rachel + "\nHANS " + hans + "\nNINA " + nina + "\n";
+            }
+        }
+
+        private void checkboxShorted_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkboxShorted.Checked)
+            {
+               bool shot = shortmode.Shortedstate = true;
+                {
+                NinaBody.Sorted = shot;
+                NinaHead.Sorted = shot;
+                NinaMask.Sorted = shot;
+                NinaWist.Sorted = shot;
+                NinaPistol.Sorted = shot;
+                NinaKnife.Sorted = shot;
+                HansBody.Sorted = shot;
+                HansHead.Sorted = shot;
+                HansMask.Sorted = shot;
+                HansWist.Sorted = shot;
+                HansPistol.Sorted = shot;
+                HansKnife.Sorted = shot;
+
+                lisaBody.Sorted = shot;
+                lisaHead.Sorted = shot;
+                lisaMask.Sorted = shot;
+                lisaWist.Sorted = shot;
+                lisaPistol.Sorted = shot;
+                LisaKnife.Sorted = shot;
+
+                RachelBody.Sorted = shot;
+                RachelHead.Sorted = shot;
+                RachelMask.Sorted = shot;
+                RachelWist.Sorted = shot;
+                RachelPistol.Sorted = shot;
+                RachelKnife.Sorted = shot;
+
+                changBody.Sorted = shot;
+                changHead.Sorted = shot;
+                changMask.Sorted = shot;
+                changWist.Sorted = shot;
+                changPistol.Sorted = shot;
+                changKnife.Sorted = shot;
+
+                alexBodyBox.Sorted = shot;
+                alexHeadBox.Sorted = shot;
+                alexKnife.Sorted = shot;
+                alexMaskBox.Sorted = shot;
+                alexWristband.Sorted = shot;
+                alexPistol.Sorted = shot;
+                }
+
+            }
+            else
+            {
+                bool shot = shortmode.Shortedstate = false;
+                {
+                    NinaBody.Sorted = shot;
+                    NinaHead.Sorted = shot;
+                    NinaMask.Sorted = shot;
+                    NinaWist.Sorted = shot;
+                    NinaPistol.Sorted = shot;
+                    NinaKnife.Sorted = shot;
+                    HansBody.Sorted = shot;
+                    HansHead.Sorted = shot;
+                    HansMask.Sorted = shot;
+                    HansWist.Sorted = shot;
+                    HansPistol.Sorted = shot;
+                    HansKnife.Sorted = shot;
+                
+                    lisaBody.Sorted = shot;
+                    lisaHead.Sorted = shot;
+                    lisaMask.Sorted = shot;
+                    lisaWist.Sorted = shot;
+                    lisaPistol.Sorted = shot;
+                    LisaKnife.Sorted = shot;
+
+                    RachelBody.Sorted = shot;
+                    RachelHead.Sorted = shot;
+                    RachelMask.Sorted = shot;
+                    RachelWist.Sorted = shot;
+                    RachelPistol.Sorted = shot;
+                    RachelKnife.Sorted = shot;
+
+                    changBody.Sorted = shot;
+                    changHead.Sorted = shot;
+                    changMask.Sorted = shot;
+                    changWist.Sorted = shot;
+                    changPistol.Sorted = shot;
+                    changKnife.Sorted = shot;
+
+                    alexBodyBox.Sorted = shot;
+                    alexHeadBox.Sorted = shot;
+                    alexKnife.Sorted = shot;
+                    alexMaskBox.Sorted = shot;
+                    alexWristband.Sorted = shot;
+                    alexPistol.Sorted = shot;
+                }
+
+            }
+
         }
     }
 }
