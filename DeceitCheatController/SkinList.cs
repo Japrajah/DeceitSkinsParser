@@ -157,15 +157,9 @@ class SkinInfo
             for (int i = 0; i < Skin.Length; i++)
             {
                 if (Skin[i] == "")
-                {
-
-
-                   return "INVALID"; ;
-                }
-                   
-                        }
-             if (charachter == "ALEX")
-            {
+                    return "INVALID";
+            }
+     
                 for (int i = 0; i < 3; i++)
                 {
                     for (int z = 0; z < SkinList.skInfo.Count; z++)
@@ -213,268 +207,18 @@ class SkinInfo
                         }
                     }
                 }
+            if (charachter == "ALEX")
                 return loadout + "6178,7215,8225,";
-            }
-
              if (charachter == "CHANG")
-            {
-                for (int i = 0; i < 3; i++)
-                {
-                    for (int z = 0; z < SkinList.skInfo.Count; z++)
-                    {
-                        if (SkinList.skInfo[z].SkinType == charachter + "_HEAD" || SkinList.skInfo[z].SkinType == charachter + "_BODY" || SkinList.skInfo[z].SkinType == charachter + "_MASK")
-                        {
-                            if (SkinList.skInfo[z].SkinName == Skin[i])
-                            {
-                                loadout += SkinList.skInfo[z].Global_Id + ",";
-                                break;
-                            }
-                        }
-                    }
-                }
-                for (int z = 0; z < SkinList.skInfo.Count; z++)
-                {
-                    if (SkinList.skInfo[z].SkinType == "WRISTBAND")
-                    {
-                        if (SkinList.skInfo[z].SkinName == Skin[3])
-                        {
-                            loadout += SkinList.skInfo[z].Global_Id + ",";
-                            break;
-                        }
-                    }
-                }
-                for (int z = 0; z < SkinList.skInfo.Count; z++)
-                {
-                    if (SkinList.skInfo[z].SkinType == "PISTOL")
-                    {
-                        if (SkinList.skInfo[z].SkinName == Skin[4])
-                        {
-                            loadout += SkinList.skInfo[z].Global_Id + ",";
-                            break;
-                        }
-                    }
-                }
-                for (int z = 0; z < SkinList.skInfo.Count; z++)
-                {
-                    if (SkinList.skInfo[z].SkinType == "KNIFE")
-                    {
-                        if (SkinList.skInfo[z].SkinName == Skin[5])
-                        {
-                            loadout += SkinList.skInfo[z].Global_Id + ",";
-                            break;
-                        }
-                    }
-                }
                 return loadout + "22579,23596,8225,";
-            }
-
              if (charachter == "LISA")
-            {
-                for (int i = 0; i < 3; i++)
-                {
-                    for (int z = 0; z < SkinList.skInfo.Count; z++)
-                    {
-                        if (SkinList.skInfo[z].SkinType == charachter + "_HEAD" || SkinList.skInfo[z].SkinType == charachter +"_BODY" || SkinList.skInfo[z].SkinType == charachter+"_MASK")
-                        {
-                            if (SkinList.skInfo[z].SkinName == Skin[i])
-                            {
-                                loadout += SkinList.skInfo[z].Global_Id + ",";
-                                break;
-                            }
-                        }
-                    }
-                }
-                for (int z = 0; z < SkinList.skInfo.Count; z++)
-                {
-                    if (SkinList.skInfo[z].SkinType == "WRISTBAND")
-                    {
-                        if (SkinList.skInfo[z].SkinName == Skin[3])
-                        {
-                            loadout += SkinList.skInfo[z].Global_Id + ",";
-                            break;
-                        }
-                    }
-                }
-                for (int z = 0; z < SkinList.skInfo.Count; z++)
-                {
-                    if (SkinList.skInfo[z].SkinType == "PISTOL")
-                    {
-                        if (SkinList.skInfo[z].SkinName == Skin[4])
-                        {
-                            loadout += SkinList.skInfo[z].Global_Id + ",";
-                            break;
-                        }
-                    }
-                }
-                for (int z = 0; z < SkinList.skInfo.Count; z++)
-                {
-                    if (SkinList.skInfo[z].SkinType == "KNIFE")
-                    {
-                        if (SkinList.skInfo[z].SkinName == Skin[5])
-                        {
-                            loadout += SkinList.skInfo[z].Global_Id + ",";
-                            break;
-                        }
-                    }
-                }
                 return loadout + "38922,39940,8225,";
-            }
-
              if (charachter == "RACHEL")
-            {
-                for (int i = 0; i < 3; i++)
-                {
-                    for (int z = 0; z < SkinList.skInfo.Count; z++)
-                    {
-                        if (SkinList.skInfo[z].SkinType == charachter + "_HEAD" || SkinList.skInfo[z].SkinType == charachter + "_BODY" || SkinList.skInfo[z].SkinType == charachter + "_MASK")
-                        {
-                            if (SkinList.skInfo[z].SkinName == Skin[i])
-                            {
-                                loadout += SkinList.skInfo[z].Global_Id + ",";
-                                break;
-                            }
-                        }
-                    }
-                }
-                for (int z = 0; z < SkinList.skInfo.Count; z++)
-                {
-                    if (SkinList.skInfo[z].SkinType == "WRISTBAND")
-                    {
-                        if (SkinList.skInfo[z].SkinName == Skin[3])
-                        {
-                            loadout += SkinList.skInfo[z].Global_Id + ",";
-                            break;
-                        }
-                    }
-                }
-                for (int z = 0; z < SkinList.skInfo.Count; z++)
-                {
-                    if (SkinList.skInfo[z].SkinType == "PISTOL")
-                    {
-                        if (SkinList.skInfo[z].SkinName == Skin[4])
-                        {
-                            loadout += SkinList.skInfo[z].Global_Id + ",";
-                            break;
-                        }
-                    }
-                }
-                for (int z = 0; z < SkinList.skInfo.Count; z++)
-                {
-                    if (SkinList.skInfo[z].SkinType == "KNIFE")
-                    {
-                        if (SkinList.skInfo[z].SkinName == Skin[5])
-                        {
-                            loadout += SkinList.skInfo[z].Global_Id + ",";
-                            break;
-                        }
-                    }
-                }
                 return loadout + "55299,56334,8225,";
-            }
-
              if (charachter == "HANS")
-            {
-                for (int i = 0; i < 3; i++)
-                {
-                    for (int z = 0; z < SkinList.skInfo.Count; z++)
-                    {
-                        if (SkinList.skInfo[z].SkinType == charachter + "_HEAD" || SkinList.skInfo[z].SkinType == charachter + "_BODY" || SkinList.skInfo[z].SkinType == charachter + "_MASK")
-                        {
-                            if (SkinList.skInfo[z].SkinName == Skin[i])
-                            {
-                                loadout += SkinList.skInfo[z].Global_Id + ",";
-                                break;
-                            }
-                        }
-                    }
-                }
-                for (int z = 0; z < SkinList.skInfo.Count; z++)
-                {
-                    if (SkinList.skInfo[z].SkinType == "WRISTBAND")
-                    {
-                        if (SkinList.skInfo[z].SkinName == Skin[3])
-                        {
-                            loadout += SkinList.skInfo[z].Global_Id + ",";
-                            break;
-                        }
-                    }
-                }
-                for (int z = 0; z < SkinList.skInfo.Count; z++)
-                {
-                    if (SkinList.skInfo[z].SkinType == "PISTOL")
-                    {
-                        if (SkinList.skInfo[z].SkinName == Skin[4])
-                        {
-                            loadout += SkinList.skInfo[z].Global_Id + ",";
-                            break;
-                        }
-                    }
-                }
-                for (int z = 0; z < SkinList.skInfo.Count; z++)
-                {
-                    if (SkinList.skInfo[z].SkinType == "KNIFE")
-                    {
-                        if (SkinList.skInfo[z].SkinName == Skin[5])
-                        {
-                            loadout += SkinList.skInfo[z].Global_Id + ",";
-                            break;
-                        }
-                    }
-                }
                 return loadout + "71695,72720,8225,";
-            }
-
              if (charachter == "NINA")
-            {
-                for (int i = 0; i < 3; i++)
-                {
-                    for (int z = 0; z < SkinList.skInfo.Count; z++)
-                    {
-                        if (SkinList.skInfo[z].SkinType == charachter + "_HEAD" || SkinList.skInfo[z].SkinType == charachter + "_BODY" || SkinList.skInfo[z].SkinType == charachter + "_MASK")
-                        {
-                            if (SkinList.skInfo[z].SkinName == Skin[i])
-                            {
-                                loadout += SkinList.skInfo[z].Global_Id + ",";
-                                break;
-                            }
-                        }
-                    }
-                }
-                for (int z = 0; z < SkinList.skInfo.Count; z++)
-                {
-                    if (SkinList.skInfo[z].SkinType == "WRISTBAND")
-                    {
-                        if (SkinList.skInfo[z].SkinName == Skin[3])
-                        {
-                            loadout += SkinList.skInfo[z].Global_Id + ",";
-                            break;
-                        }
-                    }
-                }
-                for (int z = 0; z < SkinList.skInfo.Count; z++)
-                {
-                    if (SkinList.skInfo[z].SkinType == "PISTOL")
-                    {
-                        if (SkinList.skInfo[z].SkinName == Skin[4])
-                        {
-                            loadout += SkinList.skInfo[z].Global_Id + ",";
-                            break;
-                        }
-                    }
-                }
-                for (int z = 0; z < SkinList.skInfo.Count; z++)
-                {
-                    if (SkinList.skInfo[z].SkinType == "KNIFE")
-                    {
-                        if (SkinList.skInfo[z].SkinName == Skin[5])
-                        {
-                            loadout += SkinList.skInfo[z].Global_Id + ",";
-                            break;
-                        }
-                    }
-                }
                 return loadout + "88073,89134,8225";
-            }
 
             return "INVALID";
         }
