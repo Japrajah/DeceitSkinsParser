@@ -1,3 +1,1 @@
-
-# THIS SOURCE Cannot be use FOR COMMERCIAL PURPOSE
-# THIS SOURCE Cannot be use FOR COMMERCIAL PURPOSE
+To add new skins update unlocks.cvs in from game folder
