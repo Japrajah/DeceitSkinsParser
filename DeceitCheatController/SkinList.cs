@@ -32,7 +32,7 @@ class SkinInfo
 
         static private string TryDefineSKIN(int Skin_id)
         {
-            int newskins = 100;
+            int newskins = 300;
             if (Skin_id >= 4097 && Skin_id <= 4162 + newskins)
                 return "PISTOL";
             if (Skin_id >= 5121 && Skin_id <= 5178 + newskins)
